@@ -28,4 +28,8 @@ router.get(
 );
 
 app.use(router.routes());
-app.listen(8080);
+app.listen(8080, () => {
+  console.log(
+    "app listening on port 8080, check docs in http://localhost:8080/docs"
+  );
+});
